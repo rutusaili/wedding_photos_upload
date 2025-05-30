@@ -8,14 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Times+New+Roman&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #800000; /* Deep maroon background */
-            background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4fa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'), /* Gold rangoli-inspired pattern */
-                            linear-gradient(rgba(255, 153, 51, 0.1), rgba(255, 153, 51, 0.1)), /* Saffron overlay */
+            background-color: #800000; /* Deep maroon background as fallback */
+            background-image: url('Gemini_Generated_Image_bilu82bilu82bilu.png'), /* New background image from GitHub repository */
                             url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* Textured paper effect */
-            background-size: cover, auto, auto;
-            background-position: center, center, center;
-            background-attachment: fixed, fixed, fixed;
-            background-blend-mode: overlay, overlay, multiply;
+            background-size: cover, auto;
+            background-position: center, center;
+            background-attachment: fixed, fixed;
+            background-blend-mode: overlay, multiply;
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -57,7 +56,7 @@
             height: 100%;
         }
         h1 {
-            font-family: 'Great Vibes', cursive;
+            font-family: 'Great+Vibes', cursive;
             font-size: 2.5rem;
             color: #800000; /* Maroon text */
             margin: 1rem 0 0.5rem;
@@ -161,7 +160,6 @@
             <!-- Body -->
             <ellipse cx="100" cy="150" rx="20" ry="30" fill="#FFFFFF"/>
             <!-- Beak -->
-            
             <polygon points="100,120 110,130 90,130" fill="#FFFFFF"/>
             <!-- Crest -->
             <path d="M100,110 Q105,100 110,110 Q105,90 100,100 Q95,90 90,110 Q95,100 100,110" fill="#FFFFFF" stroke="#E6E6FA" stroke-width="1"/>
