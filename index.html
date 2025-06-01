@@ -2,42 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- Ensure proper mobile scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Ruturaj Weds Saili - Wedding Photo Upload</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Times+New+Roman&display=swap" rel="stylesheet">
     <style>
         body {
-            background-image: url('Purple and Green Watercolor Wedding Invitation_20250531_203815_0000.png'); /* Updated to reference image in GitHub repository */
+            background-color: #800000; /* Deep maroon background as fallback */
+            background-image: url('Purple and Green Watercolor Wedding Invitation_20250531_203815_0000.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             min-height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center; /* Center the container vertically */
+            align-items: center; /* Keeps vertical centering as the base */
             font-family: 'Times New Roman', serif;
             margin: 0;
             overflow-x: hidden;
         }
         .container {
-            background-color: #FFFDD0; /* Cream container */
+            background-color: #FFFDD0;
             padding: 1.5rem;
-            border-radius: 20px; /* Scalloped edge effect */
+            border-radius: 20px;
             text-align: center;
             max-width: 90%;
             width: 100%;
             box-sizing: border-box;
-            border: 2px solid #FFD700; /* Gold border */
+            border: 2px solid #FFD700;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             position: relative;
             z-index: 1;
-            margin-top: -10vh;
+            margin-top: -10vh; /* Added to move the container up */
         }
         h1 {
             font-family: 'Great+Vibes', cursive;
             font-size: 2.5rem;
-            color: #800000; /* Maroon text */
+            color: #800000;
             margin: 1rem 0 0.5rem;
             line-height: 1.2;
         }
@@ -65,18 +66,18 @@
             text-align: center;
             text-decoration: none;
             font-family: 'Times New Roman', serif;
-            background-color: #FFD700; /* Gold buttons */
-            color: #800000; /* Maroon text */
-            border: 1px solid #FF9933; /* Saffron border */
+            background-color: #FFD700;
+            color: #800000;
+            border: 1px solid #FF9933;
         }
         .btn:hover {
             transform: scale(1.05);
-            background-color: #FFC107; /* Lighter gold on hover */
+            background-color: #FFC107;
         }
-        @media (max-width: 768px) { /* Applies to Nothing Phone (2a) in portrait mode (~428px width) */
+        @media (max-width: 768px) {
             .container {
                 padding: 1rem;
-                /* No margin-top here to maintain vertical centering */
+                margin-top: -5vh; /* Adjusted for mobile to move up less dramatically */
             }
             h1 {
                 font-size: 2rem;
